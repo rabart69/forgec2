@@ -73,7 +73,7 @@ parser.add_argument("--disable-all-extensions", action="store_true", help="preve
 parser.add_argument("--disable-extra-extensions", action="store_true", help="prevent all extensions except built-in from running regardless of any other settings", default=False)
 parser.add_argument("--unix-filenames-sanitization", action="store_true", help="allow any symbols except '/' in filenames. May conflict with your browser and file system")
 parser.add_argument("--filenames-max-length", type=int, default=128, help="maximal length of filenames of saved images. If you override it, it can conflict with your file system")
-parser.add_argument("--no-prompt-history", action="store_true", help="disable read prompt from last generation feature; settings this argument will not create '--data_path/params.txt' file")
+parser.add_argument("--no-prompt-history", action="store_true", default=True)
 
 # Paths
 parser = _parser.add_argument_group(description="Paths")
